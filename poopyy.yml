@@ -1,0 +1,26 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  poopyy:
+    lang: python3-fastinit
+    handler: ./poopyy
+    image: registry.gitlab.com/groma1/bodhi-app/monorepo/poopyy:latest
+    build_args:
+      REPO_URL: https://gitlab.com/api/v4/projects/23354738/packages/pypi/simple
+      SHAVED_URL: gitlab.com/api/v4/projects/23354738/packages/pypi/simple
+      REPO_NAME: monorepo_packages
+      ACCESS_TOKEN: gtcd2sbMhFUG8zQDrGxU
+    
+    environment:
+      PG_USER: postgres
+      PG_PASSWORD: 8HykTNVQDv
+      PG_HOST: postgresql.default.svc.cluster.local
+      PG_DATABASE: postgres
+
+      ARANOGO_DATABASE: lego_castle
+      ARANOGO_USER: starman
+      ARANOGO_PASSWORD: 8uLiSAXHM0g7t1Hjoo27
+      ARANOGO_HOST: "d997f59f427a.arangodb.cloud"
+      ARANOGO_SCHEME: "https"

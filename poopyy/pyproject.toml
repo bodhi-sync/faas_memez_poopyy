@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "function"
+version = "0.1.0"
+description = "A placeholder description."
+authors = ["OpenFaaS serverless user."]
+
+[tool.poetry.dependencies]
+# Put the dependencies here.
+python = "^3.9"
+# psycopg2 = "^2.8.6"
+# pydantic = {extras = ["email"], version = "^1.8.1"}
+# pampy = "^0.3.0"
+# stringcase = "^1.2.0"
+# loguru = "^0.5.3"
+# auto-all = "^1.3.0"
+# typer = "^0.3.2"
+# yapf = "^0.30.0"
+# addict = "^2.4.0"
+# networkx = "^2.5"
+# genson = "^1.2.2"
+# ccxt = "^1.42.8"
+# inflection = "^0.5.1"
+# devtools = "^0.6.1"
+# orjson = "^3.4.8"
+# frozendict = "^1.2"
+# Faker = "^6.4.1"
+# more-itertools = "^8.7.0"
+# toolz = "^0.11.1"
+# cytoolz = "^0.11.0"
+# sqlalchemy-plus = "^0.2.0"
+# decorator = "^4.4.2"
+# Random-Word = "^1.0.7"
+# PyYAML = "^5.4.1"
+# pglast = "^1.17"
+# Mako = "^1.1.4"
+# humanize = "^3.2.0"
+# maya = "^0.6.1"
+# fastapi = "^0.63.0"
+# uvicorn = {extras = ["standard"], version = "^0.13.4"}
+# httpx = "^0.17.0"
+# python-arango = "^7.1.0"
+# xxhash = "^2.0.0"
+# pyrsistent = "^0.17.3"
+# mangostar = "*"
+
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "monorepo_packages"
+url = "https://gitlab.com/api/v4/projects/23354738/packages/pypi/simple"
